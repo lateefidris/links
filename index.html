@@ -3,34 +3,100 @@
   <head>
     <title>LIdrisLinks</title>
     <meta charset="utf-8">
+    <style>
+      body {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background-color: #0f0e17;
+        display: flex;
+        justify-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .banner-image {
+        width: 128px;
+        height: 128px;
+        object-fit: cover;
+        border-radius: 128px;
+        border: 4px outset orangered;
+        display: flex;
+        justify-content: center;
+      }
+      .thumbnail {
+        width: 48px;
+        height: 48px;
+        border-radius: 48px;
+        object-fit: cover;
+      }
+      .name {
+        color: #fffffe;
+        display: flex;
+        justify-content: center;
+        font-size: 40px;
+      }
+      .social-icons {
+        color:orangered;
+        text-decoration: none;
+        display: flex;
+        justify-content: space-around;
+      }
+      .link {
+        height: 50px;
+        background-image: url(/Images/staircase-Redshift_ROP1.gif);
+        background-position: center;
+        background-repeat: no-repeat;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+      }
+      .link a {
+        text-decoration: none;
+        color: #fffffe;
+        text-align: center;
+        flex-grow: 1;
+        font-weight: bold;
+      }
+      .items {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        max-width: 640px;
+        flex-grow: 1;
+        justify-content: center;
+      }
+      .banner {
+        display: flex;
+        justify-content: center;
+      }
+    </style>
   </head>
 
   <body>
-    <div class="banner">
-      <img src="/Images/Dopamine.gif" alt="profile-picture">
-    </div>
+    <div class="items">
+      <div class="banner">
+        <img src="/Images/Dopamine.gif" alt="profile-picture" class="banner-image">
+      </div>
 
-    <div class="name">
-      <span>Lateef Idris</span>
-    </div>
+      <div class="name">
+        <span>Lateef Idris</span>
+      </div>
 
-    <div class="social-icons">
-      <a href="https://www.instagram.com/l.idris/" target="_blank">
-        Instagram
-      </a>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/l.idris/" target="_blank" class="social-icons">
+          Instagram
+        </a>
 
-      <a href="https://www.tiktok.com/@lidris17" target="_blank">
-        TikTok
-      </a>
-    </div>
+        <a href="https://www.tiktok.com/@lidris17" target="_blank" class="social-icons">
+          TikTok
+        </a>
+      </div>
 
-    <div class="link">
-      <img src="/Images/staircase-Redshift_ROP1.gif" alt="Website">
-      <a target="_blank" href="https://www.l-idris.com/"> 
-        Website
-      </a>
-
-    </div>
+      <div class="link">
+        <a target="_blank" href="https://www.l-idris.com/"> 
+          WEBSITE
+        </a>
+      </div>
+    </div>  
 
 
   </body>
